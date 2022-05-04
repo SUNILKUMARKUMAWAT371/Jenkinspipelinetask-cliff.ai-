@@ -5,14 +5,14 @@ pipeline {
 
     stage('docker build') {
       steps {
-        sh 'sudo docker build . -t newimage5'
+        sh 'sudo docker build . -t newimage6'
         echo 'your build is success this time'
       }
     }
     
      stage('docker run ') {
       steps {
-        sh 'sudo docker run --name mynewos1  newimage5'
+        sh 'sudo docker run --name mynewos1  newimage6'
         echo 'your build is success this time'
       }
     }
