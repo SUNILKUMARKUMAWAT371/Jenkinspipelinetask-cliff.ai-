@@ -3,17 +3,17 @@ pipeline {
   
   stages{
 
-    stage('docker build') {
+    stage('build stage') {
       steps {
-        sh 'sudo docker build . -t newimage6'
-        echo 'your build is success this time'
+        sh 'sudo docker build . -t newimage7'
+        echo 'your build stage success !'
       }
     }
     
-     stage('docker run ') {
+     stage('run stage ') {
       steps {
-        sh 'sudo docker run --name mynewos1  newimage6'
-        echo 'your build is success this time'
+        sh 'sudo docker run --name mynewos2  newimage7'
+        echo 'your build stage success !'
       }
     }
    

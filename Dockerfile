@@ -1,9 +1,9 @@
-FROM centos:latest
+FROM centos:7
 
-LABEL name="myapacheweb"
+LABEL name="myapachewebserver"
 LABEL version="0.1"
 LABEL description="A simple HTTP service."
 
 
-CMD echo "Hey Guys how are hello you"
+CMD echo "Hello DevOps I am coming"
 
